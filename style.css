@@ -20,7 +20,6 @@ body {
 main {
     height: 100vh;
     position: relative;
-
 }
 
 section#telefone {
@@ -29,9 +28,10 @@ section#telefone {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 50%);
+    transform: translate(-50%, -50%);
     background: url(../Projeto-Social/imagens/frame-iphone.png) no-repeat ;
-   
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 iframe#tela {
@@ -40,4 +40,23 @@ iframe#tela {
     left: 22px;
     width: 269px;
     height: 471px;
+}
+
+section#redes-sociais {
+    text-align: right;
+}
+
+section#redes-sociais img {
+    width: 50px;
+    margin: 7px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.432);
+    box-sizing: border-box;
+}
+
+section#redes-sociais img:hover {
+    border: 2px solid whitesmoke;
+    transform: translate(-2px, -2px);
+    box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.432);
+    transition: trasform .3s border .3s;
 }
